@@ -72,6 +72,8 @@ for the `GET` method for both `collection` and `item` to create a readonly endpo
 If the operation's name matches a supported HTTP method (`GET`, `POST`, `PUT`, `PATCH` or `DELETE`), the corresponding `method` property
 will be automatically added.
 
+A header 'Allow' will be automatically added to the response, listing the allowed HTTP methods for the current resource that match the same `uriTemplate`.
+
 > [!TIP]
 > The `#[GetCollection]` attribute is an alias for `#[Get(collection: true)]`
 

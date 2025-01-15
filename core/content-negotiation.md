@@ -61,6 +61,8 @@ Because the Symfony Serializer component is able to serialize objects in XML, se
 `text/xml` string as value is enough to retrieve XML documents from our API. However API Platform knows nothing about the
 `myformat` format. We need to register an encoder and optionally a normalizer for this format.
 
+When a POST method is allowed on a resource, the `Accept-Post` header is automatically added with the MIME types of the formats supported by the resource.
+
 ## Configuring PATCH Formats
 
 By default, API Platform supports JSON Merge Patch and JSON:API PATCH formats.
